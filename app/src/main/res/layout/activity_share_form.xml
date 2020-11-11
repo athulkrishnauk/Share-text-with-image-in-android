@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShareForm"
+    android:gravity="center"
+    android:background="#eae2e3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:src="@drawable/share" />
+
+        <EditText
+            android:id="@+id/editText100"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/imageView2"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:id="@+id/shareit"
+            android:textColor="#ffffff"
+            android:background="@drawable/sharebtn"
+            android:layout_below="@+id/editText100"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:typeface="serif"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
